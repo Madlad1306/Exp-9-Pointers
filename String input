@@ -1,0 +1,25 @@
+#include <iostream>
+using namespace std;
+
+int main() {
+    char str[100];
+
+    cout << "Enter a string: ";
+    cin >> str;
+
+    char *ptr = str;
+
+    cout << "String: ";
+    while (*ptr != '\0') {
+        cout << *ptr;
+        ptr++;
+    }
+    cout << endl;
+
+    return 0;
+}
+
+
+OUTPUT :
+Enter a string: Hello
+String: Hello
